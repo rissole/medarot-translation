@@ -10,3 +10,5 @@ A translation tool specifically for translating the Medarot DS game for Nintendo
 Compile the project. It's vanilla C#.
 
 After that you'll probably want to download the Medarot DS rom from some location on the internet, and extract the SPT files for viewing. There are many tools that can perform this, DSLazy is what I used.
+
+*Project created 24th June 2012*
