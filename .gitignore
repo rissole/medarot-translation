@@ -1,0 +1,5 @@
+*.suo
+MedarotTranslation/bin
+MedarotTranslation/obj
+*.user
+MedarotTranslation/Properties

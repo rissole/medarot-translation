@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{134C46F9-0FD3-4B51-ADF0-A8990709C3FA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MedarotTranslation</RootNamespace>
+    <AssemblyName>MedarotTranslation</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Font10Converter.cs" />
+    <Compile Include="Classes\NFTR.cs" />
+    <Compile Include="Classes\SPTBlock.cs" />
+    <Compile Include="Classes\SPTElement.cs" />
+    <Compile Include="Classes\TranslationMemory.cs" />
+    <Compile Include="Forms\FindInSPTWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FindInSPTWindow.Designer.cs">
+      <DependentUpon>FindInSPTWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HexTextConv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HexTextConv.Designer.cs">
+      <DependentUpon>HexTextConv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\JishEdit\JishEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\JishEdit\JishEdit.Designer.cs">
+      <DependentUpon>JishEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\JishEdit\JishEntry.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\JishEdit\JishEntry.Designer.cs">
+      <DependentUpon>JishEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SPTEditWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SPTEditWindow.Designer.cs">
+      <DependentUpon>SPTEditWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TexBmpConv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TexBmpConv.Designer.cs">
+      <DependentUpon>TexBmpConv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Translatables\GenericTranslatable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Translatables\GenericTranslatable.Designer.cs">
+      <DependentUpon>GenericTranslatable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Translatables\MessageBlock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Translatables\MessageBlock.Designer.cs">
+      <DependentUpon>MessageBlock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NewConsole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewConsole.Designer.cs">
+      <DependentUpon>NewConsole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Classes\SPTCommand.cs" />
+    <Compile Include="Classes\Translatable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Translatables\Nameplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Translatables\Nameplate.Designer.cs">
+      <DependentUpon>Nameplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Translatables\Note.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Translatables\Note.Designer.cs">
+      <DependentUpon>Note.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\FindInSPTWindow.resx">
+      <DependentUpon>FindInSPTWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HexTextConv.resx">
+      <DependentUpon>HexTextConv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\JishEdit\JishEdit.resx">
+      <DependentUpon>JishEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\JishEdit\JishEntry.resx">
+      <DependentUpon>JishEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SPTEditWindow.resx">
+      <DependentUpon>SPTEditWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TexBmpConv.resx">
+      <DependentUpon>TexBmpConv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Translatables\GenericTranslatable.resx">
+      <DependentUpon>GenericTranslatable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Translatables\MessageBlock.resx">
+      <DependentUpon>MessageBlock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewConsole.resx">
+      <DependentUpon>NewConsole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Translatables\Nameplate.resx">
+      <DependentUpon>Nameplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Translatables\Note.resx">
+      <DependentUpon>Note.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
